@@ -11,6 +11,7 @@
 		750E00442AAEF80800738CA8 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750E00432AAEF80800738CA8 /* MeetingView.swift */; };
 		750E00462AAEF80900738CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750E00452AAEF80900738CA8 /* Assets.xcassets */; };
 		750E00492AAEF80900738CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750E00482AAEF80900738CA8 /* Preview Assets.xcassets */; };
+		755E560E2ABAE85B003E0718 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E560D2ABAE85B003E0718 /* ScrumsView.swift */; };
 		757E13162AB4394F007CBAB4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E13152AB4394F007CBAB4 /* Theme.swift */; };
 		757E13182AB43B4D007CBAB4 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E13172AB43B4D007CBAB4 /* DailyScrum.swift */; };
 		757E131A2AB43CE1007CBAB4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E13192AB43CE1007CBAB4 /* CardView.swift */; };
@@ -23,6 +24,7 @@
 		750E00432AAEF80800738CA8 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		750E00452AAEF80900738CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750E00482AAEF80900738CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		755E560D2ABAE85B003E0718 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		757E13152AB4394F007CBAB4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		757E13172AB43B4D007CBAB4 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		757E13192AB43CE1007CBAB4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -61,11 +63,9 @@
 			children = (
 				757E13142AB4393C007CBAB4 /* Models */,
 				750E00412AAEF80800738CA8 /* ScrumdingerApp.swift */,
-				750E00432AAEF80800738CA8 /* MeetingView.swift */,
+				7577C8952ABAF39D00C1E2EF /* Views */,
 				750E00452AAEF80900738CA8 /* Assets.xcassets */,
 				750E00472AAEF80900738CA8 /* Preview Content */,
-				757E13192AB43CE1007CBAB4 /* CardView.swift */,
-				757E131B2AB443B4007CBAB4 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -76,6 +76,17 @@
 				750E00482AAEF80900738CA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7577C8952ABAF39D00C1E2EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				750E00432AAEF80800738CA8 /* MeetingView.swift */,
+				757E13192AB43CE1007CBAB4 /* CardView.swift */,
+				757E131B2AB443B4007CBAB4 /* TrailingIconLabelStyle.swift */,
+				755E560D2ABAE85B003E0718 /* ScrumsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		757E13142AB4393C007CBAB4 /* Models */ = {
@@ -115,7 +126,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					750E003D2AAEF80800738CA8 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -160,6 +171,7 @@
 				757E13182AB43B4D007CBAB4 /* DailyScrum.swift in Sources */,
 				757E131C2AB443B4007CBAB4 /* TrailingIconLabelStyle.swift in Sources */,
 				757E13162AB4394F007CBAB4 /* Theme.swift in Sources */,
+				755E560E2ABAE85B003E0718 /* ScrumsView.swift in Sources */,
 				750E00442AAEF80800738CA8 /* MeetingView.swift in Sources */,
 				750E00422AAEF80800738CA8 /* ScrumdingerApp.swift in Sources */,
 				757E131A2AB43CE1007CBAB4 /* CardView.swift in Sources */,
@@ -205,6 +217,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -265,6 +278,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
