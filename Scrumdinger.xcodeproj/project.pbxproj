@@ -11,6 +11,7 @@
 		750E00442AAEF80800738CA8 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750E00432AAEF80800738CA8 /* MeetingView.swift */; };
 		750E00462AAEF80900738CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750E00452AAEF80900738CA8 /* Assets.xcassets */; };
 		750E00492AAEF80900738CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750E00482AAEF80900738CA8 /* Preview Assets.xcassets */; };
+		752C75692B90544B00ABD289 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C75682B90544B00ABD289 /* MeetingHeaderView.swift */; };
 		75556BDA2ABBF66F00A5E38F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75556BD92ABBF66F00A5E38F /* DetailView.swift */; };
 		75556BDC2ABC08BA00A5E38F /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75556BDB2ABC08BA00A5E38F /* DetailEditView.swift */; };
 		755E560E2ABAE85B003E0718 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E560D2ABAE85B003E0718 /* ScrumsView.swift */; };
@@ -28,6 +29,7 @@
 		750E00432AAEF80800738CA8 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		750E00452AAEF80900738CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750E00482AAEF80900738CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		752C75682B90544B00ABD289 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		75556BD92ABBF66F00A5E38F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		75556BDB2ABC08BA00A5E38F /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		755E560D2ABAE85B003E0718 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				756981BA2AC13BFF0075CF5B /* ThemePicker.swift */,
 				750E00432AAEF80800738CA8 /* MeetingView.swift */,
+				752C75682B90544B00ABD289 /* MeetingHeaderView.swift */,
 				757E13192AB43CE1007CBAB4 /* CardView.swift */,
 				757E131B2AB443B4007CBAB4 /* TrailingIconLabelStyle.swift */,
 				755E560D2ABAE85B003E0718 /* ScrumsView.swift */,
@@ -138,7 +141,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					750E003D2AAEF80800738CA8 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -183,6 +186,7 @@
 				756981BB2AC13BFF0075CF5B /* ThemePicker.swift in Sources */,
 				757E13182AB43B4D007CBAB4 /* DailyScrum.swift in Sources */,
 				75556BDA2ABBF66F00A5E38F /* DetailView.swift in Sources */,
+				752C75692B90544B00ABD289 /* MeetingHeaderView.swift in Sources */,
 				75556BDC2ABC08BA00A5E38F /* DetailEditView.swift in Sources */,
 				757E131C2AB443B4007CBAB4 /* TrailingIconLabelStyle.swift in Sources */,
 				757E13162AB4394F007CBAB4 /* Theme.swift in Sources */,
@@ -201,6 +205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -262,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
