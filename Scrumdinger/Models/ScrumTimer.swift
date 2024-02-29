@@ -72,6 +72,19 @@ final class ScrumTimer: ObservableObject {
         changeToSpeaker(at: 0)
     }
     
+    /// Stop the timer
+    func stopScrum() {
+        timer?.invalidate()
+        timerStopped = true
+    }
+    
+    /// Advance the timer to the next speaker.
+    nonisolated func skipSpeaker() {
+        Task { @MainActor in
+            changeToSpeaker(at: speakerIndex + 1)
+        }
+    }
+    
     private func changeToSpeaker(at index: Int) {
         if index > 0 {
             let previousSpeakerIndex = index - 1
